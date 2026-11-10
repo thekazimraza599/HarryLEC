@@ -3,3 +3,7 @@ th,
 td {
   border: 1px solid black;
 }
+#icons{
+  height: 50px;
+  width: 50px;
+}
