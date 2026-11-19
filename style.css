@@ -1,35 +1,60 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Brush Script MT', cursive;
+  font-family: "Open Sans", sans-serif;
 }
-table,
-th,
-td {
-  border: 1px solid black;
+header > div {
+  background-color: #f3f5cb;
+ 
+  min-height: 200px;
+
 }
-#icons{
-  height: 50px;
-  width: 50px;
+table {
+  display: none; 
 }
-#logo{
-  display: inline;
+.card{
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  width: 300px;
+  height: 400px;
+  padding:20px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff0f0;
 }
-#steps svg {
-  width: 30px;
-  height: 30px;
-  vertical-align: middle;
+.card>img {
+  display:block;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
 }
-header { 
-  color:Tomato;
-  background-color: #fceae6;
- }
-#LogoText{
-  font-size: 30px;
+
+.card p:nth-child(2),.card p:nth-child(3){
+  display:inline-block;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 5px 10px;
   font-weight: bold;
-  color:Tomato;
-}
-#location-link:hover {
-  color:black;
-  font-size: 20px;
+  color: #566c5a;
+} 
+.card-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #689169;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 50%;
+  position: absolute;
+  bottom:4%;
+  left:0;
+  right:0;
+  margin: 0 auto;
+  font-weight: bold;
 }
